@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — Onelots</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="main-header" class="scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i data-feather="smartphone"></i></div>
+                Onelots
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://github.com/onelots" target="_blank" class="nav-cta">GitHub</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-close" id="mobileClose" aria-label="Close">
+            <i data-feather="x" style="width:28px;height:28px;"></i>
+        </button>
+        <a href="index.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/onelots" target="_blank">GitHub</a>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Infrastructure</p>
+                <h1 class="section-title">Services</h1>
+                <p class="section-desc">
+                    Self-hosted services I run for the community and my own infrastructure.
+                    All hosted on my own hardware.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="container">
+            <div class="services-grid">
+
+                <!-- Forgejo -->
+                <a href="https://git.onelots.fr" target="_blank" class="service-card accent-line">
+                    <div class="service-icon accent">📦</div>
+                    <div class="service-name">Forgejo</div>
+                    <p class="service-desc">
+                        Self-hosted Git forge. Device trees, kernel sources, and local manifests
+                        for all my maintained devices.
+                    </p>
+                    <div class="service-footer">
+                        <span class="service-url">git.onelots.fr</span>
+                        <i data-feather="arrow-up-right" class="service-arrow"></i>
+                    </div>
+                </a>
+
+                <!-- Wiki -->
+                <a href="https://wiki.onelots.fr" target="_blank" class="service-card green-line">
+                    <div class="service-icon green">📖</div>
+                    <div class="service-name">Wiki</div>
+                    <p class="service-desc">
+                        Documentation hub with installation guides, changelogs, 
+                        and device-specific instructions for my builds.
+                    </p>
+                    <div class="service-footer">
+                        <span class="service-url">wiki.onelots.fr</span>
+                        <i data-feather="arrow-up-right" class="service-arrow"></i>
+                    </div>
+                </a>
+
+                <!-- Downloads -->
+                <a href="https://evox.onelots.fr" target="_blank" class="service-card blue-line">
+                    <div class="service-icon blue">⬇️</div>
+                    <div class="service-name">Downloads</div>
+                    <p class="service-desc">
+                        Personal mirror for EvolutionX and LineageOS builds.
+                        Direct downloads, checksums, and build info.
+                    </p>
+                    <div class="service-footer">
+                        <span class="service-url">evox.onelots.fr</span>
+                        <i data-feather="arrow-up-right" class="service-arrow"></i>
+                    </div>
+                </a>
+
+                <!-- Status -->
+                <a href="https://status.onelots.fr" target="_blank" class="service-card orange-line">
+                    <div class="service-icon orange">📊</div>
+                    <div class="service-name">Status Page</div>
+                    <p class="service-desc">
+                        Real-time uptime monitoring for all services. 
+                        Check current status and incident history.
+                    </p>
+                    <div class="service-footer">
+                        <span class="service-status"><span class="dot"></span> Operational</span>
+                        <i data-feather="arrow-up-right" class="service-arrow"></i>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>Built by <span>Onelots</span> · <a href="index.html">About</a> · <a href="contact.html">Contact</a></p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileClose = document.getElementById('mobileClose');
+        mobileMenuBtn.addEventListener('click', () => { mobileNav.classList.add('active'); document.body.style.overflow = 'hidden'; });
+        mobileClose.addEventListener('click', () => { mobileNav.classList.remove('active'); document.body.style.overflow = ''; });
+        document.querySelectorAll('.mobile-nav a').forEach(l => l.addEventListener('click', () => { mobileNav.classList.remove('active'); document.body.style.overflow = ''; }));
+    </script>
+</body>
+</html>

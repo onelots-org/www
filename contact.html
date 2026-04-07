@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Onelots</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="main-header" class="scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i data-feather="smartphone"></i></div>
+                Onelots
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="https://github.com/onelots" target="_blank" class="nav-cta">GitHub</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-close" id="mobileClose" aria-label="Close">
+            <i data-feather="x" style="width:28px;height:28px;"></i>
+        </button>
+        <a href="index.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/onelots" target="_blank">GitHub</a>
+    </div>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Get in touch</p>
+                <h1 class="section-title">Contact</h1>
+                <p class="section-desc">
+                    Got a question about my builds, want to report a bug, or just say hi?
+                    Here's where to find me.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <a href="https://github.com/onelots" target="_blank" class="contact-card">
+                    <div class="contact-icon github"><i data-feather="github"></i></div>
+                    <div class="contact-info">
+                        <div class="contact-name">GitHub</div>
+                        <div class="contact-handle">@onelots</div>
+                    </div>
+                    <i data-feather="arrow-up-right" class="contact-arrow"></i>
+                </a>
+                <a href="https://t.me/onelots" target="_blank" class="contact-card">
+                    <div class="contact-icon telegram"><i data-feather="send"></i></div>
+                    <div class="contact-info">
+                        <div class="contact-name">Telegram</div>
+                        <div class="contact-handle">@onelots</div>
+                    </div>
+                    <i data-feather="arrow-up-right" class="contact-arrow"></i>
+                </a>
+                <a href="https://discord.gg/evolution-x" target="_blank" class="contact-card">
+                    <div class="contact-icon discord"><i data-feather="message-circle"></i></div>
+                    <div class="contact-info">
+                        <div class="contact-name">Discord</div>
+                        <div class="contact-handle">EvolutionX Server</div>
+                    </div>
+                    <i data-feather="arrow-up-right" class="contact-arrow"></i>
+                </a>
+                <a href="mailto:onelots@onelots.fr" class="contact-card">
+                    <div class="contact-icon mail"><i data-feather="mail"></i></div>
+                    <div class="contact-info">
+                        <div class="contact-name">Email</div>
+                        <div class="contact-handle">onelots@onelots.fr</div>
+                    </div>
+                    <i data-feather="arrow-up-right" class="contact-arrow"></i>
+                </a>
+                <a href="https://paypal.me/0nelots" target="_blank" class="contact-card">
+                    <div class="contact-icon paypal"><i data-feather="dollar-sign"></i></div>
+                    <div class="contact-info">
+                        <div class="contact-name">Support my work</div>
+                        <div class="contact-handle">paypal.me/0nelots</div>
+                    </div>
+                    <i data-feather="arrow-up-right" class="contact-arrow"></i>
+                </a>
+                <a href="https://evox.onelots.fr" target="_blank" class="contact-card">
+                    <div class="contact-icon web"><i data-feather="globe"></i></div>
+                    <div class="contact-info">
+                        <div class="contact-name">Builds Mirror</div>
+                        <div class="contact-handle">evox.onelots.fr</div>
+                    </div>
+                    <i data-feather="arrow-up-right" class="contact-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>Built by <span>Onelots</span> · <a href="index.html">About</a> · <a href="services.html">Services</a></p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileClose = document.getElementById('mobileClose');
+        mobileMenuBtn.addEventListener('click', () => { mobileNav.classList.add('active'); document.body.style.overflow = 'hidden'; });
+        mobileClose.addEventListener('click', () => { mobileNav.classList.remove('active'); document.body.style.overflow = ''; });
+        document.querySelectorAll('.mobile-nav a').forEach(l => l.addEventListener('click', () => { mobileNav.classList.remove('active'); document.body.style.overflow = ''; }));
+    </script>
+</body>
+</html>

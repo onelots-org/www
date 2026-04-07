@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onelots — Android ROM Maintainer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <meta property="og:title" content="Onelots — Android ROM Maintainer">
+    <meta property="og:description" content="Maintainer for EvolutionX and LineageOS. Building better Android, one commit at a time.">
+    <meta property="og:image" content="https://github.com/onelots.png">
+    <meta property="og:type" content="website">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i data-feather="smartphone"></i></div>
+                Onelots
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://github.com/onelots" target="_blank" class="nav-cta">GitHub</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-close" id="mobileClose" aria-label="Close">
+            <i data-feather="x" style="width:28px;height:28px;"></i>
+        </button>
+        <a href="index.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/onelots" target="_blank">GitHub</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Android ROM Maintainer
+                </div>
+                <h1 class="hero-title">
+                    <span class="name">Onelots</span>
+                    <span class="subtitle">Building better Android, one commit at a time.</span>
+                </h1>
+                <p class="hero-desc">
+                    Maintainer for <strong>EvolutionX</strong> and <strong>LineageOS</strong>.
+                    Delivering source-built, quality-tested custom ROMs for the Android community.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i data-feather="layers"></i>
+                        My Projects
+                    </a>
+                    <a href="services.html" class="btn btn-secondary">
+                        <i data-feather="server"></i>
+                        Services
+                    </a>
+                    <a href="contact.html" class="btn btn-ghost">
+                        <i data-feather="send"></i>
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">About me</p>
+                <h2 class="section-title">Who's behind the builds?</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Hey! I'm <strong>Onelots</strong>, an Android enthusiast and open-source
+                        contributor. I spend most of my time in AOSP source trees —
+                        porting features, fixing bugs, and shipping builds that work.
+                    </p>
+                    <p>
+                        I'm a <span class="highlight-accent">Project Member & Maintainer at EvolutionX</span>
+                        and a <span class="highlight-green">Maintainer at LineageOS</span> — two of the
+                        most respected custom ROM projects out there.
+                    </p>
+                    <p>
+                        All my builds are compiled from source, tested on real hardware,
+                        and maintained with long-term support in mind. No shortcuts.
+                    </p>
+                </div>
+
+                <!-- Avatar + Info -->
+            <div>
+                <div class="about-avatar" style="margin-bottom: 24px;">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-ring"></div>
+                        <img src="img/onelots.png" alt="Onelots" class="avatar-img" />
+                    </div>
+                    <div class="avatar-name">Onelots</div>
+                    <div class="avatar-role">
+                        EvolutionX Project Member<br>LineageOS Device Maintainer
+                    </div>
+                </div>
+            </div>
+                <div class="info-list">
+                    <div class="info-item">
+                        <div class="info-icon accent">🚀</div>
+                        <div class="info-content">
+                            <div class="info-name">EvolutionX</div>
+                            <div class="info-desc">Project Member · Official Maintainer</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon green">🟢</div>
+                        <div class="info-content">
+                            <div class="info-name">LineageOS</div>
+                            <div class="info-desc">Official Device Maintainer</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon blue">🔧</div>
+                        <div class="info-content">
+                            <div class="info-name">Device Trees & Kernels</div>
+                            <div class="info-desc">Bring-up, patches, upstream merges</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon orange">⚙️</div>
+                        <div class="info-content">
+                            <div class="info-name">Build Systems</div>
+                            <div class="info-desc">Soong, Make, CI pipelines</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Projects</p>
+                <h2 class="section-title">What I work on</h2>
+                <p class="section-desc">
+                    My contributions to the Android custom ROM ecosystem.
+                </p>
+            </div>
+            <div class="projects-grid">
+                <a href="https://evolution-x.org" target="_blank" class="project-card featured">
+                    <div class="project-logo evox">🚀</div>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <span class="project-name">EvolutionX</span>
+                            <span class="project-badge badge-maintainer">Maintainer · Project Member</span>
+                        </div>
+                        <p class="project-desc">
+                            Pixel-first AOSP-based custom ROM focused on performance and a clean user
+                            experience. I maintain official device support, review patches, and contribute
+                            to the project's core development.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">AOSP</span>
+                            <span class="tag">Android 15</span>
+                            <span class="tag">Pixel Features</span>
+                            <span class="tag">Official</span>
+                        </div>
+                    </div>
+                    <i data-feather="arrow-up-right" class="project-arrow"></i>
+                </a>
+                <a href="https://lineageos.org" target="_blank" class="project-card featured">
+                    <div class="project-logo lineage">🟢</div>
+                    <div class="project-body">
+                        <div class="project-header">
+                            <span class="project-name">LineageOS</span>
+                            <span class="project-badge badge-member">Maintainer</span>
+                        </div>
+                        <p class="project-desc">
+                            The most widely used custom ROM in the world. As a maintainer,
+                            I keep device support up to date, merge upstream changes,
+                            and ensure build quality across releases.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">AOSP</span>
+                            <span class="tag">LineageOS 22.x</span>
+                            <span class="tag">Device Maintainer</span>
+                            <span class="tag">Upstream</span>
+                        </div>
+                    </div>
+                    <i data-feather="arrow-up-right" class="project-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>Built by <span>Onelots & Claude</span> (I am ashamed) · <a href="services.html">Services</a> · <a href="contact.html">Contact</a></p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileClose = document.getElementById('mobileClose');
+        mobileMenuBtn.addEventListener('click', () => { mobileNav.classList.add('active'); document.body.style.overflow = 'hidden'; });
+        mobileClose.addEventListener('click', () => { mobileNav.classList.remove('active'); document.body.style.overflow = ''; });
+        document.querySelectorAll('.mobile-nav a').forEach(l => l.addEventListener('click', () => { mobileNav.classList.remove('active'); document.body.style.overflow = ''; }));
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', function(e) {
+                e.preventDefault();
+                const t = document.querySelector(this.getAttribute('href'));
+                if (t) window.scrollTo({ top: t.offsetTop - 80, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
