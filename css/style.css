@@ -748,6 +748,13 @@ nav ul a.active {
     transform: translate(3px, -3px);
 }
 
+.project-org-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 /* ============================================
    SERVICE CARDS (services.html)
 ============================================ */
