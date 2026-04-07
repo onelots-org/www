@@ -805,6 +805,8 @@ nav ul a.active {
 .service-card.green-line::before { background: var(--green); }
 .service-card.blue-line::before { background: #38bdf8; }
 .service-card.orange-line::before { background: #fb923c; }
+.service-card.purple-line::before { background: #9d00ff; }
+.service-card.red-line::before { background: #C21D04; }
 
 .service-icon {
     width: 44px;
@@ -835,6 +837,16 @@ nav ul a.active {
 .service-icon.orange {
     background: rgba(251, 146, 60, 0.12);
     border: 1px solid rgba(251, 146, 60, 0.2);
+}
+
+.service-icon.purple {
+    background: rgba(157, 0, 255, 0.12);
+    border: 1px solid rgba(157, 0, 255, 0.2);
+}
+
+.service-icon.red {
+    background: rgba(194, 29, 4, 0.12);
+    border: 1px solid rgba(194, 29, 4, 0.2);
 }
 
 .service-name {
