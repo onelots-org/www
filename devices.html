@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devices — Onelots</title>
+    <link rel="icon" type="image/png" href="img/onelots.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="main-header" class="scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <!-- Good ol' Onelots pfp -->
+                    <img 
+                        src="https://github.com/onelots.png" 
+                        alt="LineageOS" 
+                        class="project-org-logo"
+                    >
+                Onelots
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="devices.html" class="active">Devices</a></li>
+                    <li><a href="https://github.com/onelots" target="_blank" class="nav-cta">GitHub</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="devices-header">
+        <div class="container">
+            <div class="section-label">hardware lab</div>
+            <h1>My <span>Devices</span></h1>
+            <p>A collection of Android devices I maintain, test or simply own — running LineageOS or EvolutionX. </br>Sometimes not running anything, just sitting on my shelf.</p>
+            <div class="devices-stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-total">0</span>
+                    <span class="stat-label">Total devices</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-los">0</span>
+                    <span class="stat-label">LineageOS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="stat-evox">0</span>
+                    <span class="stat-label">EvolutionX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTERS + GRID -->
+    <section class="devices-section">
+        <div class="container">
+
+            <div class="filters-bar">
+                <span class="filter-label">filter //</span>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn los" data-filter="lineageos">
+                    <span class="filter-dot"></span>LineageOS
+                </button>
+                <button class="filter-btn evox" data-filter="evolutionx">
+                    <span class="filter-dot"></span>EvolutionX
+                </button>
+            </div>
+
+            <div class="legend">
+                <span class="legend-item"><span class="device-status-legend active"></span> Maintained</span>
+                <span class="legend-item"><span class="device-status-legend testing"></span> Testing</span>
+                <span class="legend-item"><span class="device-status-legend eol"></span> EOL</span>
+                <span class="legend-item"><span class="device-status-legend owned"></span> Owned</span>
+            </div>
+
+            <div class="devices-grid" id="devices-grid">
+                <!-- Cards injected by JS -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <a href="index.html" class="logo">onelots<span>.</span></a>
+                <p class="footer-copy">© 2025 onelots. Built with too many devices.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/devices.js"></script>
+</body>
+</html>
