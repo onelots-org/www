@@ -92,12 +92,12 @@ function buildCard(device) {
         .map((c, i) => `<span class="codename-badge${i > 0 ? ' alias' : ''}">${c}</span>`)
         .join("");
 
-    const romsHtml = device.roms
-        .map(r => {
-            const rom = romConfig[r];
-            return rom ? `<span class="rom-badge ${r}">${rom.label}</span>` : "";
-        })
-        .join("");
+    const romsHtml = (device.roms ?? [])
+    .map(r => {
+        const rom = romConfig[r];
+        return rom ? `<span class="rom-badge ${r}">${rom.label}</span>` : "";
+    })
+    .join("");
 
     const imgHtml = device.image
         ? `<img src="${device.image}" alt="${device.name}" loading="lazy">`
