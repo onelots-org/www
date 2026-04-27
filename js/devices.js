@@ -58,6 +58,118 @@ const devices = [
         roms: [],
         status: "owned",
         aka: ["Xiaomi Mi A1"]
+    },
+    {
+        name: "Laurel_Sprout",
+        codenames: ["laurel_sprout"],
+        image: "img/devices/laurel_sprout.png",
+        roms: ["evolutionx"],
+        status: "active",
+        aka: ["Xiaomi Mi A3"]
+    },
+    {
+        name: "Scorpio",
+        codenames: ["scorpio"],
+        image: "img/devices/scorpio.png",
+        roms: ["lineageos"],
+        status: "active",
+        aka: ["Xiaomi Mi Note 2"]
+    },
+    {
+        name: "Polaris",
+        codenames: ["polaris"],
+        image: "img/devices/polaris.png",
+        roms: ["evolutionx"],
+        status: "active",
+        aka: ["Xiaomi Mi Mix 2S"]
+    },
+    {
+        name: "Star2lte",
+        codenames: ["star2lte"],
+        image: "img/devices/star2lte.png",
+        roms: [],
+        status: "owned",
+        aka: ["Samsung Galaxy S9+"]
+    },
+    {
+        name: "Ginkgo",
+        codenames: ["ginkgo"],
+        image: "img/devices/ginkgo.png",
+        roms: ["evolutionx"],
+        status: "active",
+        aka: ["Redmi Note 8 (Snapdragon)", "Redmi Note 8T"]
+    },
+    {
+        name: "Miami",
+        codenames: ["miami"],
+        image: "img/devices/miami.png",
+        roms: [],
+        status: "owned",
+        aka: ["Motorola Edge 30 Neo"]
+    },
+    {
+        name: "Caprip",
+        codenames: ["caprip"],
+        image: "img/devices/caprip.png",
+        roms: [],
+        status: "owned",
+        aka: ["Motorola moto G30", "Lenovo K13 Pro"]
+    },
+    {
+        name: "Kane",
+        codenames: ["kane"],
+        image: "img/devices/kane.png",
+        roms: [],
+        status: "owned",
+        aka: ["Motorola p50", "Motorola One Vision"]
+    },
+    {
+        name: "Denver",
+        codenames: ["denver"],
+        image: "img/devices/denver.png",
+        roms: [],
+        status: "owned",
+        aka: ["Motorola Moto G stylus 5G"]
+    },
+    {
+        name: "Cheeseburger",
+        codenames: ["cheeseburger"],
+        image: "img/devices/cheeseburger.png",
+        roms: ["evolutionx"],
+        status: "active",
+        aka: ["OnePlus 5"]
+    },
+    {
+        name: "Fajitas",
+        codenames: ["fajitas"],
+        image: "img/devices/fajitas.png",
+        roms: [],
+        status: "owned",
+        aka: ["OnePlus 6T", "OnePlus 6T (T-Mobile)"]
+    },
+    {
+        name: "Billie",
+        codenames: ["billie"],
+        image: "img/devices/billie.png",
+        roms: ["lineageos"],
+        status: "active",
+        aka: ["OnePlus Nord 10 CE 5G"]
+    },
+    {
+        name: "Pdx225",
+        codenames: ["pdx225"],
+        image: "img/devices/pdx225.png",
+        roms: [],
+        status: "owned",
+        aka: ["Sony 10 IV"]
+    },
+    {
+        name: "Cepheus",
+        codenames: ["cepheus"],
+        image: "img/devices/cepheus.png",
+        roms: [],
+        status: "owned",
+        aka: ["Xiaomi Mi 9"]
     }
 ];
 
