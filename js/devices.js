@@ -29,11 +29,35 @@ const devices = [
     },
     {
         name: "Ibiza",
-        codenames: ["Ibiza"],
+        codenames: ["ibiza"],
         image: "img/devices/ibiza.png",
         roms: ["lineageos"],
         status: "testing",
         aka: ["Motorola Moto G50 (2021)"]
+    },
+    {
+        name: "Hotdogb",
+        codenames: ["hotdogb"],
+        image: "img/devices/hotdogb.png",
+        roms: ["lineageos", "evolutionx"],
+        status: "active",
+        aka: ["OnePlus 7T"]
+    },
+    {
+        name: "Vince",
+        codenames: ["vince"],
+        image: "img/devices/vince.png",
+        roms: ["evolutionx"],
+        status: "eol",
+        aka: ["Redmi 5 Plus"]
+    },
+    {
+        name: "Tissot",
+        codenames: ["tissot"],
+        image: "img/devices/tissot.png",
+        roms: ["evolutionx"],
+        status: "owned",
+        aka: ["Xiaomi Mi A1"]
     }
 ];
 
