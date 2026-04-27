@@ -18,6 +18,22 @@ const devices = [
         roms: ["lineageos", "evolutionx"],
         status: "testing",
         aka: ["POCO M2 Pro", "Redmi 9 Pro Max", "Redmi Note 9S", "Redmi Note 9 Pro (India)", "Redmi Note 9 Pro (Global)", "Redmi Note 10 Lite"]
+    },
+    {
+        name: "Sargo",
+        codenames: ["sargo"],
+        image: "img/devices/sargo.png",
+        roms: ["evolutionx"],
+        status: "eol",
+        aka: ["Google Pixel 3a"]
+    },
+    {
+        name: "Ibiza",
+        codenames: ["Ibiza"],
+        image: "img/devices/ibiza.png",
+        roms: ["lineageos"],
+        status: "testing",
+        aka: ["Motorola Moto G50 (2021)"]
     }
 ];
 
