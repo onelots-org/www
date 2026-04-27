@@ -236,6 +236,14 @@ const devices = [
         aka: ["Redmi Note 7"]
     },
     {
+        name: "Twolip",
+        codenames: ["twolip"],
+        image: "img/devices/twolip.png",
+        roms: [],
+        status: "owned",
+        aka: ["Redmi Note 6 Pro"]
+    },
+    {
         name: "Aurora",
         codenames: ["aurora"],
         image: "img/devices/aurora.png",
