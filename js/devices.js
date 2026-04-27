@@ -272,7 +272,7 @@ function buildCard(device) {
         </div>` : "";
 
     return `
-        <div class="device-card" data-status="${device.status}" data-roms="${device.roms.join(" ")}">
+        <div class="device-card" data-status="${device.status}" data-roms="${(device.roms ?? []).join(" ")}" data-codenames="${device.codenames.join(" ")}" data-name="${device.name}" data-aka="${(device.aka ?? []).join(" ")}">
             <div class="device-image">${imgHtml}</div>
             <div class="device-body">
                 <div class="device-top">
@@ -296,9 +296,17 @@ function buildCard(device) {
 
 function renderGrid(filter = "all") {
     const grid = document.getElementById("devices-grid");
-    const filtered = filter === "all"
-        ? devices
-        : devices.filter(d => d.roms.includes(filter));
+    const query = document.getElementById("device-search")?.value.toLowerCase().trim() ?? "";
+
+    const filtered = devices.filter(d => {
+        const romMatch = filter === "all" || (d.roms ?? []).includes(filter);
+        const searchMatch = !query || [
+            d.name,
+            d.codenames.join(" "),
+            (d.aka ?? []).join(" ")
+        ].some(f => f.toLowerCase().includes(query));
+        return romMatch && searchMatch;
+    });
 
     grid.innerHTML = filtered.length
         ? filtered.map(buildCard).join("")
@@ -343,6 +351,21 @@ window.addEventListener('scroll', () => {
 // ============================================
 // INIT
 // ============================================
+
+let activeFilter = "all";
+
+document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeFilter = btn.dataset.filter;
+        renderGrid(activeFilter);
+    });
+});
+
+document.getElementById("device-search").addEventListener("input", () => {
+    renderGrid(activeFilter);
+});
 
 renderGrid();
 updateStats();
