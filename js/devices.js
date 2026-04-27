@@ -210,6 +210,54 @@ const devices = [
         roms: [],
         status: "owned",
         aka: ["Xiaomi Mi 10T Lite", "Xiaomi Mi 10i 5G", "Redmi Note 9 Pro 5G"]
+    },
+    {
+        name: "r8q",
+        codenames: ["r8q"],
+        image: "img/devices/r8q.png",
+        roms: [],
+        status: "owned",
+        aka: ["Samsung Galaxy S20 FE (Snapdragon)"]
+    },
+    {
+        name: "Platina",
+        codenames: ["platina"],
+        image: "img/devices/platina.png",
+        roms: [],
+        status: "owned",
+        aka: ["Xiaomi Mi 8 Lite"]
+    },
+    {
+        name: "Lavender",
+        codenames: ["lavender"],
+        image: "img/devices/lavender.png",
+        roms: [],
+        status: "owned",
+        aka: ["Redmi Note 7"]
+    },
+    {
+        name: "Aurora",
+        codenames: ["aurora"],
+        image: "img/devices/aurora.png",
+        roms: [],
+        status: "owned",
+        aka: ["Xiaomi Mi 14 Ultra"]
+    },
+    {
+        name: "Sm-A600",
+        codenames: ["sm-a600"],
+        image: "img/devices/sm-a600.png",
+        roms: [],
+        status: "owned",
+        aka: ["Samsung Galaxy A6"]
+    },
+    {
+        name: "Xcover4lte",
+        codenames: ["xcover4lte"],
+        image: "img/devices/xcover4lte.png",
+        roms: [],
+        status: "owned",
+        aka: ["Samsung Galaxy Xcover 4"]
     }
 ];
 
