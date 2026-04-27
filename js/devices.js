@@ -194,6 +194,22 @@ const devices = [
         roms: ["lineageos"],
         status: "testing",
         aka: ["Ayn Thor"]
+    },
+    {
+        name: "Fleur",
+        codenames: ["fleur", "miel"],
+        image: "img/devices/fleur.png",
+        roms: ["evolutionx"],
+        status: "active",
+        aka: ["Redmi Note 11S", "POCO M4 Pro 4G"]
+    },
+    {
+        name: "Gauguin",
+        codenames: ["gauguin"],
+        image: "img/devices/gauguin.png",
+        roms: [],
+        status: "owned",
+        aka: ["Xiaomi Mi 10T Lite", "Xiaomi Mi 10i 5G", "Redmi Note 9 Pro 5G"]
     }
 ];
 
