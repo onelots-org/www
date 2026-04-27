@@ -389,35 +389,6 @@ document.querySelectorAll(".filter-btn").forEach(btn => {
 });
 
 // ============================================
-// HEADER SCROLL
-// ============================================
-
-window.addEventListener('scroll', () => {
-    document.getElementById('main-header').classList.toggle('scrolled', window.scrollY > 50);
-});
-
-// ============================================
-// MOBILE NAV
-// ============================================
-
-const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-const mobileClose = document.getElementById('mobileClose');
-const mobileNav = document.getElementById('mobileNav');
-const mainHeader = document.getElementById('main-header');
-
-mobileMenuBtn?.addEventListener('click', () => {
-    mobileNav.classList.add('active');
-    mainHeader.style.opacity = '0';
-    mainHeader.style.pointerEvents = 'none';
-});
-
-mobileClose?.addEventListener('click', () => {
-    mobileNav.classList.remove('active');
-    mainHeader.style.opacity = '1';
-    mainHeader.style.pointerEvents = '';
-});
-
-// ============================================
 // INIT
 // ============================================
 
