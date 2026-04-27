@@ -4,12 +4,108 @@
 
 const devices = [
     {
+        name: "Scorpio",
+        codenames: ["scorpio"],
+        image: "img/devices/scorpio.png",
+        roms: ["lineageos"],
+        status: "active",
+        aka: ["Xiaomi Mi Note 2"]
+    },
+    {
+        name: "Billie",
+        codenames: ["billie"],
+        image: "img/devices/billie.png",
+        roms: ["lineageos"],
+        status: "active",
+        aka: ["OnePlus Nord 10 CE 5G"]
+    },
+    {
+        name: "Hotdogb",
+        codenames: ["hotdogb"],
+        image: "img/devices/hotdogb.png",
+        roms: ["lineageos", "evolutionx"],
+        status: "active",
+        aka: ["OnePlus 7T"]
+    },
+    {
         name: "Veux",
         codenames: ["veux", "peux"],
         image: "img/devices/veux.png",
         roms: ["evolutionx"],
         status: "active",
         aka: ["POCO X4 Pro 5G", "Redmi Note 11 Pro 5G", "Redmi Note 11 Pro+ 5G", "Redmi Note 11E Pro"]
+    },
+    {
+        name: "Laurel_Sprout",
+        codenames: ["laurel_sprout"],
+        image: "img/devices/laurel_sprout.png",
+        roms: ["evolutionx"],
+        status: "active",
+        aka: ["Xiaomi Mi A3"]
+    },
+    {
+        name: "Polaris",
+        codenames: ["polaris"],
+        image: "img/devices/polaris.png",
+        roms: ["evolutionx"],
+        status: "active",
+        aka: ["Xiaomi Mi Mix 2S"]
+    },
+    {
+        name: "Ginkgo",
+        codenames: ["ginkgo"],
+        image: "img/devices/ginkgo.png",
+        roms: ["evolutionx"],
+        status: "active",
+        aka: ["Redmi Note 8 (Snapdragon)", "Redmi Note 8T"]
+    },
+    {
+        name: "Cheeseburger",
+        codenames: ["cheeseburger"],
+        image: "img/devices/cheeseburger.png",
+        roms: ["evolutionx"],
+        status: "active",
+        aka: ["OnePlus 5"]
+    },
+    {
+        name: "Fleur",
+        codenames: ["fleur", "miel"],
+        image: "img/devices/fleur.png",
+        roms: ["evolutionx"],
+        status: "active",
+        aka: ["Redmi Note 11S", "POCO M4 Pro 4G"]
+    },
+    {
+        name: "Ibiza",
+        codenames: ["ibiza"],
+        image: "img/devices/ibiza.png",
+        roms: ["lineageos"],
+        status: "testing",
+        aka: ["Motorola Moto G50 (2021)"]
+    },
+    {
+        name: "Odin2",
+        codenames: ["odin2"],
+        image: "img/devices/odin2.png",
+        roms: ["lineageos"],
+        status: "testing",
+        aka: ["Ayn Odin2"]
+    },
+    {
+        name: "Odin2Mini",
+        codenames: ["odin2mini"],
+        image: "img/devices/odin2mini.png",
+        roms: ["lineageos"],
+        status: "testing",
+        aka: ["Ayn Odin2 Mini"]
+    },
+    {
+        name: "odin2thor",
+        codenames: ["odin2thor", "thor"],
+        image: "img/devices/odin2thor.png",
+        roms: ["lineageos"],
+        status: "testing",
+        aka: ["Ayn Thor"]
     },
     {
         name: "Miatoll",
@@ -28,22 +124,6 @@ const devices = [
         aka: ["Google Pixel 3a"]
     },
     {
-        name: "Ibiza",
-        codenames: ["ibiza"],
-        image: "img/devices/ibiza.png",
-        roms: ["lineageos"],
-        status: "testing",
-        aka: ["Motorola Moto G50 (2021)"]
-    },
-    {
-        name: "Hotdogb",
-        codenames: ["hotdogb"],
-        image: "img/devices/hotdogb.png",
-        roms: ["lineageos", "evolutionx"],
-        status: "active",
-        aka: ["OnePlus 7T"]
-    },
-    {
         name: "Vince",
         codenames: ["vince"],
         image: "img/devices/vince.png",
@@ -60,44 +140,12 @@ const devices = [
         aka: ["Xiaomi Mi A1"]
     },
     {
-        name: "Laurel_Sprout",
-        codenames: ["laurel_sprout"],
-        image: "img/devices/laurel_sprout.png",
-        roms: ["evolutionx"],
-        status: "active",
-        aka: ["Xiaomi Mi A3"]
-    },
-    {
-        name: "Scorpio",
-        codenames: ["scorpio"],
-        image: "img/devices/scorpio.png",
-        roms: ["lineageos"],
-        status: "active",
-        aka: ["Xiaomi Mi Note 2"]
-    },
-    {
-        name: "Polaris",
-        codenames: ["polaris"],
-        image: "img/devices/polaris.png",
-        roms: ["evolutionx"],
-        status: "active",
-        aka: ["Xiaomi Mi Mix 2S"]
-    },
-    {
         name: "Star2lte",
         codenames: ["star2lte"],
         image: "img/devices/star2lte.png",
         roms: [],
         status: "owned",
         aka: ["Samsung Galaxy S9+"]
-    },
-    {
-        name: "Ginkgo",
-        codenames: ["ginkgo"],
-        image: "img/devices/ginkgo.png",
-        roms: ["evolutionx"],
-        status: "active",
-        aka: ["Redmi Note 8 (Snapdragon)", "Redmi Note 8T"]
     },
     {
         name: "Miami",
@@ -132,28 +180,12 @@ const devices = [
         aka: ["Motorola Moto G stylus 5G"]
     },
     {
-        name: "Cheeseburger",
-        codenames: ["cheeseburger"],
-        image: "img/devices/cheeseburger.png",
-        roms: ["evolutionx"],
-        status: "active",
-        aka: ["OnePlus 5"]
-    },
-    {
         name: "Fajitas",
         codenames: ["fajitas"],
         image: "img/devices/fajitas.png",
         roms: [],
         status: "owned",
         aka: ["OnePlus 6T", "OnePlus 6T (T-Mobile)"]
-    },
-    {
-        name: "Billie",
-        codenames: ["billie"],
-        image: "img/devices/billie.png",
-        roms: ["lineageos"],
-        status: "active",
-        aka: ["OnePlus Nord 10 CE 5G"]
     },
     {
         name: "Pdx225",
@@ -170,38 +202,6 @@ const devices = [
         roms: [],
         status: "owned",
         aka: ["Xiaomi Mi 9"]
-    },
-    {
-        name: "Odin2",
-        codenames: ["odin2"],
-        image: "img/devices/odin2.png",
-        roms: ["lineageos"],
-        status: "testing",
-        aka: ["Ayn Odin2"]
-    },
-    {
-        name: "Odin2Mini",
-        codenames: ["odin2mini"],
-        image: "img/devices/odin2mini.png",
-        roms: ["lineageos"],
-        status: "testing",
-        aka: ["Ayn Odin2 Mini"]
-    },
-    {
-        name: "odin2thor",
-        codenames: ["odin2thor", "thor"],
-        image: "img/devices/odin2thor.png",
-        roms: ["lineageos"],
-        status: "testing",
-        aka: ["Ayn Thor"]
-    },
-    {
-        name: "Fleur",
-        codenames: ["fleur", "miel"],
-        image: "img/devices/fleur.png",
-        roms: ["evolutionx"],
-        status: "active",
-        aka: ["Redmi Note 11S", "POCO M4 Pro 4G"]
     },
     {
         name: "Gauguin",
