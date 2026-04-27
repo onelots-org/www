@@ -1485,7 +1485,8 @@ footer a:hover {
 }
 
 .device-status.eol {
-    background: var(--text-muted);
+    background: #f87171;
+    box-shadow: 0 0 6px rgba(248, 113, 113, 0.5);
 }
 
 .device-status.testing {
@@ -1511,7 +1512,8 @@ footer a:hover {
 }
 
 .device-status-legend.eol {
-    background: var(--text-muted);
+    background: #f87171;
+    box-shadow: 0 0 6px rgba(248, 113, 113, 0.5);
 }
 
 .device-status-legend.testing {
