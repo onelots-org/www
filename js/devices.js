@@ -170,6 +170,30 @@ const devices = [
         roms: [],
         status: "owned",
         aka: ["Xiaomi Mi 9"]
+    },
+    {
+        name: "Odin2",
+        codenames: ["odin2"],
+        image: "img/devices/odin2.png",
+        roms: ["lineageos"],
+        status: "testing",
+        aka: ["Ayn Odin2"]
+    },
+    {
+        name: "Odin2Mini",
+        codenames: ["odin2mini"],
+        image: "img/devices/odin2mini.png",
+        roms: ["lineageos"],
+        status: "testing",
+        aka: ["Ayn Odin2 Mini"]
+    },
+    {
+        name: "odin2thor",
+        codenames: ["odin2thor", "thor"],
+        image: "img/devices/odin2thor.png",
+        roms: ["lineageos"],
+        status: "testing",
+        aka: ["Ayn Thor"]
     }
 ];
 
