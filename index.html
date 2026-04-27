@@ -46,14 +46,25 @@
 
     <!-- MOBILE NAV -->
     <div class="mobile-nav" id="mobileNav">
-        <button class="mobile-close" id="mobileClose" aria-label="Close">
-            <i data-feather="x" style="width:28px;height:28px;"></i>
-        </button>
-        <a href="index.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="devices.html">Devices</a>
-        <a href="https://github.com/onelots" target="_blank">GitHub</a>
+        <div class="mobile-nav-header">
+            <a href="index.html" class="logo">onelots<span>.</span></a>
+            <button class="mobile-close" id="mobileClose" aria-label="Close">
+                <i data-feather="x" style="width:24px;height:24px;"></i>
+            </button>
+        </div>
+
+        <nav class="mobile-nav-links">
+            <a href="index.html"><span class="mn-num">01</span>About</a>
+            <a href="services.html"><span class="mn-num">02</span>Services</a>
+            <a href="contact.html"><span class="mn-num">03</span>Contact</a>
+            <a href="devices.html"><span class="mn-num">04</span>Devices</a>
+        </nav>
+
+        <div class="mobile-nav-footer">
+            <a href="https://github.com/onelots" target="_blank" class="mn-github">
+                <i data-feather="github"></i> GitHub
+            </a>
+        </div>
     </div>
 
     <!-- HERO -->

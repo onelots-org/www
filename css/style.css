@@ -90,10 +90,14 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 50;
     padding: 16px 0;
     transition: background var(--transition), border-color var(--transition);
     border-bottom: 1px solid transparent;
+}
+
+.mn-logo span {
+    color: var(--accent);
 }
 
 header.scrolled {
@@ -183,38 +187,97 @@ nav ul a.active {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(10, 10, 15, 0.97);
+    background: rgba(10, 10, 15, 0.98);
     z-index: 99;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
+    padding: 24px 32px 40px;
+    backdrop-filter: blur(12px);
 }
 
 .mobile-nav.active {
     display: flex;
 }
 
-.mobile-nav a {
-    text-decoration: none;
-    color: var(--text-primary);
-    font-size: 1.5rem;
-    font-weight: 600;
-    transition: color var(--transition);
-}
-
-.mobile-nav a:hover {
-    color: var(--accent);
+.mobile-nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
 }
 
 .mobile-close {
-    position: absolute;
-    top: 20px;
-    right: 24px;
     background: none;
-    border: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
     color: var(--text-primary);
     cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color var(--transition), color var(--transition);
+}
+
+.mobile-close:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.mobile-nav-links a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    transition: color var(--transition);
+    letter-spacing: -0.02em;
+}
+
+.mobile-nav-links a:hover {
+    color: var(--text-primary);
+}
+
+.mn-num {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: 400;
+    width: 24px;
+}
+
+.mobile-nav-footer {
+    padding-top: 24px;
+}
+
+.mn-github {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    transition: color var(--transition);
+}
+
+.mn-github:hover {
+    color: var(--accent);
+}
+
+.mn-github svg {
+    width: 16px;
+    height: 16px;
 }
 
 /* ============================================
