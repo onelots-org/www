@@ -31,7 +31,7 @@ const devices = [
         name: "Ibiza",
         codenames: ["ibiza"],
         image: "img/devices/ibiza.png",
-        roms: ["lineageos"],
+        roms: [],
         status: "testing",
         aka: ["Motorola Moto G50 (2021)"]
     },
@@ -55,7 +55,7 @@ const devices = [
         name: "Tissot",
         codenames: ["tissot"],
         image: "img/devices/tissot.png",
-        roms: ["evolutionx"],
+        roms: [],
         status: "owned",
         aka: ["Xiaomi Mi A1"]
     }
