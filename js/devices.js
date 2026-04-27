@@ -31,7 +31,7 @@ const devices = [
         name: "Ibiza",
         codenames: ["ibiza"],
         image: "img/devices/ibiza.png",
-        roms: [],
+        roms: ["lineageos"],
         status: "testing",
         aka: ["Motorola Moto G50 (2021)"]
     },
