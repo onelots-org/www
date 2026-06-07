@@ -116,6 +116,14 @@ const devices = [
         aka: ["Ayn Thor Lite (SD865)"]
     },
     {
+        name: "rp6",
+        codenames: ["rp6"],
+        image: "img/devices/rp6.png",
+        roms: ["lineageos"],
+        status: "testing",
+        aka: ["Retroid Pocket 6 (SD865)"]
+    },
+    {
         name: "Miatoll",
         codenames: ["miatoll", "curtana", "excalibur", "gram", "joyeuse"],
         image: "img/devices/miatoll.png",
