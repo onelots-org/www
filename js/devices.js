@@ -108,6 +108,14 @@ const devices = [
         aka: ["Ayn Thor"]
     },
     {
+        name: "odin2thor_lite",
+        codenames: ["odin2thor_lite", "thor_lite"],
+        image: "img/devices/odin2thor.png",
+        roms: ["lineageos"],
+        status: "testing",
+        aka: ["Ayn Thor Lite (SD865)"]
+    },
+    {
         name: "Miatoll",
         codenames: ["miatoll", "curtana", "excalibur", "gram", "joyeuse"],
         image: "img/devices/miatoll.png",
