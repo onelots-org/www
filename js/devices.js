@@ -260,6 +260,14 @@ const devices = [
         aka: ["Redmi Note 6 Pro"]
     },
     {
+        name: "Nitrogen",
+        codenames: ["nitrogen"],
+        image: "img/devices/nitrogen.png",
+        roms: [],
+        status: "owned",
+        aka: ["Xiaomi Mi Max 3"]
+    },
+    {
         name: "Aurora",
         codenames: ["aurora"],
         image: "img/devices/aurora.png",
