@@ -268,6 +268,14 @@ const devices = [
         aka: ["Xiaomi Mi Max 3"]
     },
     {
+        name: "Jason",
+        codenames: ["jason"],
+        image: "img/devices/jason.png",
+        roms: [],
+        status: "owned",
+        aka: ["Xiaomi Mi Note 3"]
+    },
+    {
         name: "Aurora",
         codenames: ["aurora"],
         image: "img/devices/aurora.png",
