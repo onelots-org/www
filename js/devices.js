@@ -116,7 +116,7 @@ const devices = [
         aka: ["Ayn Thor Lite (SD865)"]
     },
     {
-        name: "rp6",
+        name: "Rp6",
         codenames: ["rp6"],
         image: "img/devices/rp6.png",
         roms: ["lineageos"],
