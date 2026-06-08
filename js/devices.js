@@ -276,6 +276,14 @@ const devices = [
         aka: ["Xiaomi Mi Note 3"]
     },
     {
+        name: "Jasmine_Sprout",
+        codenames: ["jasmine_sprout"],
+        image: "img/devices/jasmine_sprout.png",
+        roms: [],
+        status: "owned",
+        aka: ["Xiaomi Mi A2"]
+    },
+    {
         name: "Aurora",
         codenames: ["aurora"],
         image: "img/devices/aurora.png",
