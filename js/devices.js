@@ -292,6 +292,14 @@ const devices = [
         aka: ["Redmi Note 5"]
     },
     {
+        name: "Clover",
+        codenames: ["clover"],
+        image: "img/devices/clover.png",
+        roms: [],
+        status: "owned",
+        aka: ["Mi Pad 4"]
+    },
+    {
         name: "Aurora",
         codenames: ["aurora"],
         image: "img/devices/aurora.png",
