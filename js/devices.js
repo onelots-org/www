@@ -284,6 +284,14 @@ const devices = [
         aka: ["Xiaomi Mi A2"]
     },
     {
+        name: "Whyred",
+        codenames: ["whyred"],
+        image: "img/devices/whyred.png",
+        roms: [],
+        status: "owned",
+        aka: ["Redmi Note 5"]
+    },
+    {
         name: "Aurora",
         codenames: ["aurora"],
         image: "img/devices/aurora.png",
