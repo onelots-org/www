@@ -132,6 +132,14 @@ const devices = [
         aka: ["Ayn Thor"]
     },
     {
+        name: "Nova",
+        codenames: ["nova"],
+        image: "img/devices/nova.png",
+        roms: ["lineageos"],
+        status: "testing",
+        aka: ["Retroid Pocket Nova"]
+    },
+    {
         name: "odin2thor_lite",
         codenames: ["odin2thor_lite", "thor_lite"],
         image: "img/devices/odin2thor.png",
