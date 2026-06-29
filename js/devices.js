@@ -84,6 +84,14 @@ const devices = [
         aka: ["Google Pixel 5"]
     },
     {
+        name: "barbet",
+        codenames: ["barbet"],
+        image: "img/devices/barbet.png",
+        roms: ["evolutionx"],
+        status: "active",
+        aka: ["Google Pixel 5a"]
+    },
+    {
         name: "Ibiza",
         codenames: ["ibiza"],
         image: "img/devices/ibiza.png",
