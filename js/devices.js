@@ -236,6 +236,14 @@ const devices = [
         aka: ["OnePlus 6T", "OnePlus 6T (T-Mobile)"]
     },
     {
+        name: "Pdx224",
+        codenames: ["pdx224"],
+        image: "img/devices/pdx224.png",
+        roms: [],
+        status: "owned",
+        aka: ["Sony 5 IV"]
+    },
+    {
         name: "Pdx225",
         codenames: ["pdx225"],
         image: "img/devices/pdx225.png",
