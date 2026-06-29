@@ -76,20 +76,28 @@ const devices = [
         aka: ["Redmi Note 11S", "POCO M4 Pro 4G"]
     },
     {
-        name: "redfin",
-        codenames: ["redfin"],
-        image: "img/devices/redfin.png",
-        roms: ["evolutionx"],
-        status: "active",
-        aka: ["Google Pixel 5"]
-    },
-    {
         name: "barbet",
         codenames: ["barbet"],
         image: "img/devices/barbet.png",
         roms: ["evolutionx"],
         status: "active",
         aka: ["Google Pixel 5a"]
+    },
+    {
+        name: "bramble",
+        codenames: ["bramble"],
+        image: "img/devices/bramble.png",
+        roms: ["evolutionx"],
+        status: "active",
+        aka: ["Google Pixel 4a 5G"]
+    },
+    {
+        name: "redfin",
+        codenames: ["redfin"],
+        image: "img/devices/redfin.png",
+        roms: ["evolutionx"],
+        status: "active",
+        aka: ["Google Pixel 5"]
     },
     {
         name: "Ibiza",
