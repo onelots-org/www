@@ -164,6 +164,14 @@ const devices = [
         aka: ["Samsung Galaxy S9+"]
     },
     {
+        name: "beyond1lte",
+        codenames: ["beyond1lte"],
+        image: "img/devices/beyond1lte.png",
+        roms: [],
+        status: "owned",
+        aka: ["Samsung Galaxy S10"]
+    },
+    {
         name: "Miami",
         codenames: ["miami"],
         image: "img/devices/miami.png",
