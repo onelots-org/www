@@ -362,6 +362,14 @@ const devices = [
         roms: [],
         status: "owned",
         aka: ["Samsung Galaxy Xcover 4"]
+    },
+    {
+        name: "jfltexx",
+        codenames: ["jfltexx"],
+        image: "img/devices/jfltexx.png",
+        roms: [],
+        status: "owned",
+        aka: ["Samsung Galaxy S4"]
     }
 ];
 
