@@ -356,6 +356,14 @@ const devices = [
         aka: ["Xiaomi Mi 14 Ultra"]
     },
     {
+        name: "Once",
+        codenames: ["once"],
+        image: "img/devices/once.png",
+        roms: [],
+        status: "owned",
+        aka: ["Xiaomi Mi Box 3"]
+    },
+    {
         name: "Sm-A600",
         codenames: ["sm-a600"],
         image: "img/devices/sm-a600.png",
