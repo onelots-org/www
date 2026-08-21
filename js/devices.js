@@ -108,6 +108,14 @@ const devices = [
         aka: ["Motorola Moto G50 (2021)"]
     },
     {
+        name: "Nova",
+        codenames: ["nova"],
+        image: "img/devices/nova.png",
+        roms: ["lineageos"],
+        status: "active",
+        aka: ["Retroid Pocket Nova"]
+    },
+    {
         name: "Odin2",
         codenames: ["odin2"],
         image: "img/devices/odin2.png",
@@ -130,14 +138,6 @@ const devices = [
         roms: ["lineageos"],
         status: "testing",
         aka: ["Ayn Thor"]
-    },
-    {
-        name: "Nova",
-        codenames: ["nova"],
-        image: "img/devices/nova.png",
-        roms: ["lineageos"],
-        status: "testing",
-        aka: ["Retroid Pocket Nova"]
     },
     {
         name: "odin2thor_lite",
