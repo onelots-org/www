@@ -505,18 +505,6 @@ function toggleAka(btn) {
 }
 
 // ============================================
-// FILTERS
-// ============================================
-
-document.querySelectorAll(".filter-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        renderGrid(btn.dataset.filter);
-    });
-});
-
-// ============================================
 // INIT
 // ============================================
 
