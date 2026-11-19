@@ -21,9 +21,18 @@
     <link rel="icon" type="image/png" href="img/onelots.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
-    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></symbol>
+        <symbol id="i-github" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></symbol>
+        <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></symbol>
+        <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></symbol>
+        <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></symbol>
+        <symbol id="i-smartphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></symbol>
+        <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></symbol>
+    </svg>
 
     <!-- HEADER -->
     <header id="main-header">
@@ -47,7 +56,7 @@
                 </ul>
             </nav>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
-                <i data-feather="menu"></i>
+                <svg class="feather" width="24" height="24" aria-hidden="true"><use href="#i-menu"/></svg>
             </button>
         </div>
     </header>
@@ -57,7 +66,7 @@
         <div class="mobile-nav-header">
             <a href="index.html" class="logo">onelots<span>.</span></a>
             <button class="mobile-close" id="mobileClose" aria-label="Close">
-                <i data-feather="x" style="width:24px;height:24px;"></i>
+                <svg class="feather" style="width:24px;height:24px;" width="24" height="24" aria-hidden="true"><use href="#i-x"/></svg>
             </button>
         </div>
 
@@ -70,7 +79,7 @@
 
         <div class="mobile-nav-footer">
             <a href="https://github.com/onelots" target="_blank" class="mn-github">
-                <i data-feather="github"></i> GitHub
+                <svg class="feather" width="24" height="24" aria-hidden="true"><use href="#i-github"/></svg> GitHub
             </a>
         </div>
     </div>
@@ -97,19 +106,19 @@
                 </p>
                 <div class="hero-actions">
                     <a href="#projects" class="btn btn-primary">
-                        <i data-feather="layers"></i>
+                        <svg class="feather" width="24" height="24" aria-hidden="true"><use href="#i-layers"/></svg>
                         My Projects
                     </a>
                     <a href="services.html" class="btn btn-secondary">
-                        <i data-feather="server"></i>
+                        <svg class="feather" width="24" height="24" aria-hidden="true"><use href="#i-server"/></svg>
                         Services
                     </a>
                     <a href="devices.html" class="btn btn-secondary">
-                        <i data-feather="smartphone"></i>
+                        <svg class="feather" width="24" height="24" aria-hidden="true"><use href="#i-smartphone"/></svg>
                         My Devices
                     </a>
                     <a href="contact.html" class="btn btn-ghost">
-                        <i data-feather="send"></i>
+                        <svg class="feather" width="24" height="24" aria-hidden="true"><use href="#i-send"/></svg>
                         Contact
                     </a>
                 </div>
@@ -249,7 +258,7 @@
                             <span class="tag">Official</span>
                         </div>
                     </div>
-                    <i data-feather="arrow-up-right" class="project-arrow"></i>
+                    <svg class="feather project-arrow" width="24" height="24" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
                 </a>
                 <a href="https://lineageos.org" target="_blank" class="project-card featured">
                     <!-- LineageOS -->
@@ -274,7 +283,7 @@
                             <span class="tag">Device Maintainer</span>
                         </div>
                     </div>
-                    <i data-feather="arrow-up-right" class="project-arrow"></i>
+                    <svg class="feather project-arrow" width="24" height="24" aria-hidden="true"><use href="#i-arrow-up-right"/></svg>
                 </a>
             </div>
         </div>
@@ -288,7 +297,6 @@
     </footer>
 
     <script>
-        feather.replace();
         const header = document.getElementById('main-header');
         window.addEventListener('scroll', () => {
             header.classList.toggle('scrolled', window.scrollY > 50);
