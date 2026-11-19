@@ -436,7 +436,7 @@ function buildCard(device) {
 
     const akaHtml = device.aka?.length ? `
         <div class="device-aka">
-            <button class="aka-toggle" onclick="toggleAka(this)">
+            <button type="button" class="aka-toggle" aria-expanded="false" onclick="toggleAka(this)">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -455,7 +455,7 @@ function buildCard(device) {
                     <div class="device-name-block">
                         <span class="device-model">${device.name}</span>
                     </div>
-                    <span class="device-status ${statusConfig[device.status].color}" title="${statusConfig[device.status].label}"></span>
+                    <span class="device-status ${statusConfig[device.status].color}" title="${statusConfig[device.status].label}" role="img" aria-label="${statusConfig[device.status].label}"></span>
                 </div>
                 <div class="device-codenames">${codenamesHtml}</div>
                 <div class="device-roms">${romsHtml}</div>
@@ -500,7 +500,7 @@ function updateStats() {
 // ============================================
 
 function toggleAka(btn) {
-    btn.classList.toggle("open");
+    btn.setAttribute("aria-expanded", btn.classList.toggle("open"));
     btn.nextElementSibling.classList.toggle("open");
 }
 
@@ -512,8 +512,9 @@ let activeFilter = "all";
 
 document.querySelectorAll(".filter-btn").forEach(btn => {
     btn.addEventListener("click", () => {
-        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+        document.querySelectorAll(".filter-btn").forEach(b => { b.classList.remove("active"); b.setAttribute("aria-pressed", "false"); });
         btn.classList.add("active");
+        btn.setAttribute("aria-pressed", "true");
         activeFilter = btn.dataset.filter;
         renderGrid(activeFilter);
     });

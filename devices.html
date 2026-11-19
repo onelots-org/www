@@ -109,17 +109,17 @@
 
             <div class="filters-bar">
                 <span class="filter-label">filter //</span>
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn los" data-filter="lineageos">
+                <button type="button" class="filter-btn active" aria-pressed="true" data-filter="all">All</button>
+                <button type="button" class="filter-btn los" aria-pressed="false" data-filter="lineageos">
                     <span class="filter-dot"></span>LineageOS
                 </button>
-                <button class="filter-btn evox" data-filter="evolutionx">
+                <button type="button" class="filter-btn evox" aria-pressed="false" data-filter="evolutionx">
                     <span class="filter-dot"></span>EvolutionX
                 </button>
             </div>
 
             <div class="search-bar">
-                <input type="text" id="device-search" placeholder="Search by name, codename..." autocomplete="off">
+                <input type="search" id="device-search" aria-label="Search devices" placeholder="Search by name, codename..." autocomplete="off">
             </div>
 
             <div class="legend">
