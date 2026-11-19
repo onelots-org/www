@@ -6,7 +6,7 @@ const devices = [
     {
         name: "Scorpio",
         codenames: ["scorpio"],
-        image: "img/devices/scorpio.png",
+        image: "img/devices/scorpio.webp",
         roms: ["lineageos"],
         status: "active",
         aka: ["Xiaomi Mi Note 2"]
@@ -14,7 +14,7 @@ const devices = [
     {
         name: "Billie",
         codenames: ["billie"],
-        image: "img/devices/billie.png",
+        image: "img/devices/billie.webp",
         roms: ["lineageos"],
         status: "active",
         aka: ["OnePlus Nord 10 CE 5G"]
@@ -22,7 +22,7 @@ const devices = [
     {
         name: "Hotdogb",
         codenames: ["hotdogb"],
-        image: "img/devices/hotdogb.png",
+        image: "img/devices/hotdogb.webp",
         roms: ["lineageos", "evolutionx"],
         status: "active",
         aka: ["OnePlus 7T"]
@@ -30,7 +30,7 @@ const devices = [
     {
         name: "Veux",
         codenames: ["veux", "peux"],
-        image: "img/devices/veux.png",
+        image: "img/devices/veux.webp",
         roms: ["evolutionx"],
         status: "active",
         aka: ["POCO X4 Pro 5G", "Redmi Note 11 Pro 5G", "Redmi Note 11 Pro+ 5G", "Redmi Note 11E Pro"]
@@ -38,7 +38,7 @@ const devices = [
     {
         name: "Laurel_Sprout",
         codenames: ["laurel_sprout"],
-        image: "img/devices/laurel_sprout.png",
+        image: "img/devices/laurel_sprout.webp",
         roms: ["evolutionx"],
         status: "active",
         aka: ["Xiaomi Mi A3"]
@@ -46,7 +46,7 @@ const devices = [
     {
         name: "Polaris",
         codenames: ["polaris"],
-        image: "img/devices/polaris.png",
+        image: "img/devices/polaris.webp",
         roms: ["evolutionx"],
         status: "active",
         aka: ["Xiaomi Mi Mix 2S"]
@@ -54,7 +54,7 @@ const devices = [
     {
         name: "Ginkgo",
         codenames: ["ginkgo"],
-        image: "img/devices/ginkgo.png",
+        image: "img/devices/ginkgo.webp",
         roms: ["evolutionx"],
         status: "active",
         aka: ["Redmi Note 8 (Snapdragon)", "Redmi Note 8T"]
@@ -62,7 +62,7 @@ const devices = [
     {
         name: "Cheeseburger",
         codenames: ["cheeseburger"],
-        image: "img/devices/cheeseburger.png",
+        image: "img/devices/cheeseburger.webp",
         roms: ["evolutionx"],
         status: "active",
         aka: ["OnePlus 5"]
@@ -70,7 +70,7 @@ const devices = [
     {
         name: "Fleur",
         codenames: ["fleur", "miel"],
-        image: "img/devices/fleur.png",
+        image: "img/devices/fleur.webp",
         roms: ["evolutionx"],
         status: "active",
         aka: ["Redmi Note 11S", "POCO M4 Pro 4G"]
@@ -78,7 +78,7 @@ const devices = [
     {
         name: "barbet",
         codenames: ["barbet"],
-        image: "img/devices/barbet.png",
+        image: "img/devices/barbet.webp",
         roms: ["evolutionx"],
         status: "active",
         aka: ["Google Pixel 5a"]
@@ -86,7 +86,7 @@ const devices = [
     {
         name: "bramble",
         codenames: ["bramble"],
-        image: "img/devices/bramble.png",
+        image: "img/devices/bramble.webp",
         roms: ["evolutionx"],
         status: "active",
         aka: ["Google Pixel 4a 5G"]
@@ -94,7 +94,7 @@ const devices = [
     {
         name: "redfin",
         codenames: ["redfin"],
-        image: "img/devices/redfin.png",
+        image: "img/devices/redfin.webp",
         roms: ["evolutionx"],
         status: "active",
         aka: ["Google Pixel 5"]
@@ -102,7 +102,7 @@ const devices = [
     {
         name: "Ibiza",
         codenames: ["ibiza"],
-        image: "img/devices/ibiza.png",
+        image: "img/devices/ibiza.webp",
         roms: ["lineageos"],
         status: "active",
         aka: ["Motorola Moto G50 (2021)"]
@@ -110,7 +110,7 @@ const devices = [
     {
         name: "Nova",
         codenames: ["nova"],
-        image: "img/devices/nova.png",
+        image: "img/devices/nova.webp",
         roms: ["lineageos"],
         status: "active",
         aka: ["Retroid Pocket Nova"]
@@ -118,7 +118,7 @@ const devices = [
     {
         name: "Odin2",
         codenames: ["odin2"],
-        image: "img/devices/odin2.png",
+        image: "img/devices/odin2.webp",
         roms: ["lineageos"],
         status: "testing",
         aka: ["Ayn Odin2"]
@@ -126,7 +126,7 @@ const devices = [
     {
         name: "Odin2Mini",
         codenames: ["odin2mini"],
-        image: "img/devices/odin2mini.png",
+        image: "img/devices/odin2mini.webp",
         roms: ["lineageos"],
         status: "testing",
         aka: ["Ayn Odin2 Mini"]
@@ -134,7 +134,7 @@ const devices = [
     {
         name: "odin2thor",
         codenames: ["odin2thor", "thor"],
-        image: "img/devices/odin2thor.png",
+        image: "img/devices/odin2thor.webp",
         roms: ["lineageos"],
         status: "testing",
         aka: ["Ayn Thor"]
@@ -142,7 +142,7 @@ const devices = [
     {
         name: "odin2thor_lite",
         codenames: ["odin2thor_lite", "thor_lite"],
-        image: "img/devices/odin2thor.png",
+        image: "img/devices/odin2thor.webp",
         roms: ["lineageos"],
         status: "testing",
         aka: ["Ayn Thor Lite (SD865)"]
@@ -150,7 +150,7 @@ const devices = [
     {
         name: "Rp6",
         codenames: ["rp6"],
-        image: "img/devices/rp6.png",
+        image: "img/devices/rp6.webp",
         roms: ["lineageos"],
         status: "testing",
         aka: ["Retroid Pocket 6 (SD865)"]
@@ -158,7 +158,7 @@ const devices = [
     {
         name: "Miatoll",
         codenames: ["miatoll", "curtana", "excalibur", "gram", "joyeuse"],
-        image: "img/devices/miatoll.png",
+        image: "img/devices/miatoll.webp",
         roms: ["lineageos", "evolutionx"],
         status: "testing",
         aka: ["POCO M2 Pro", "Redmi 9 Pro Max", "Redmi Note 9S", "Redmi Note 9 Pro (India)", "Redmi Note 9 Pro (Global)", "Redmi Note 10 Lite"]
@@ -166,7 +166,7 @@ const devices = [
     {
         name: "Sargo",
         codenames: ["sargo"],
-        image: "img/devices/sargo.png",
+        image: "img/devices/sargo.webp",
         roms: ["evolutionx"],
         status: "eol",
         aka: ["Google Pixel 3a"]
@@ -174,7 +174,7 @@ const devices = [
     {
         name: "Vince",
         codenames: ["vince"],
-        image: "img/devices/vince.png",
+        image: "img/devices/vince.webp",
         roms: ["evolutionx"],
         status: "eol",
         aka: ["Redmi 5 Plus"]
@@ -182,7 +182,7 @@ const devices = [
     {
         name: "Tissot",
         codenames: ["tissot"],
-        image: "img/devices/tissot.png",
+        image: "img/devices/tissot.webp",
         roms: [],
         status: "owned",
         aka: ["Xiaomi Mi A1"]
@@ -190,7 +190,7 @@ const devices = [
     {
         name: "Star2lte",
         codenames: ["star2lte"],
-        image: "img/devices/star2lte.png",
+        image: "img/devices/star2lte.webp",
         roms: [],
         status: "owned",
         aka: ["Samsung Galaxy S9+"]
@@ -198,7 +198,7 @@ const devices = [
     {
         name: "beyond1lte",
         codenames: ["beyond1lte"],
-        image: "img/devices/beyond1lte.png",
+        image: "img/devices/beyond1lte.webp",
         roms: [],
         status: "owned",
         aka: ["Samsung Galaxy S10"]
@@ -206,7 +206,7 @@ const devices = [
     {
         name: "Miami",
         codenames: ["miami"],
-        image: "img/devices/miami.png",
+        image: "img/devices/miami.webp",
         roms: [],
         status: "owned",
         aka: ["Motorola Edge 30 Neo"]
@@ -214,7 +214,7 @@ const devices = [
     {
         name: "Caprip",
         codenames: ["caprip"],
-        image: "img/devices/caprip.png",
+        image: "img/devices/caprip.webp",
         roms: [],
         status: "owned",
         aka: ["Motorola moto G30", "Lenovo K13 Pro"]
@@ -222,7 +222,7 @@ const devices = [
     {
         name: "Kane",
         codenames: ["kane"],
-        image: "img/devices/kane.png",
+        image: "img/devices/kane.webp",
         roms: [],
         status: "owned",
         aka: ["Motorola p50", "Motorola One Vision"]
@@ -230,7 +230,7 @@ const devices = [
     {
         name: "Denver",
         codenames: ["denver"],
-        image: "img/devices/denver.png",
+        image: "img/devices/denver.webp",
         roms: [],
         status: "owned",
         aka: ["Motorola Moto G stylus 5G"]
@@ -238,7 +238,7 @@ const devices = [
     {
         name: "Fajitas",
         codenames: ["fajitas"],
-        image: "img/devices/fajitas.png",
+        image: "img/devices/fajitas.webp",
         roms: [],
         status: "owned",
         aka: ["OnePlus 6T", "OnePlus 6T (T-Mobile)"]
@@ -246,7 +246,7 @@ const devices = [
     {
         name: "Pdx224",
         codenames: ["pdx224"],
-        image: "img/devices/pdx224.png",
+        image: "img/devices/pdx224.webp",
         roms: [],
         status: "owned",
         aka: ["Sony 5 IV"]
@@ -254,7 +254,7 @@ const devices = [
     {
         name: "Pdx225",
         codenames: ["pdx225"],
-        image: "img/devices/pdx225.png",
+        image: "img/devices/pdx225.webp",
         roms: [],
         status: "owned",
         aka: ["Sony 10 IV"]
@@ -262,7 +262,7 @@ const devices = [
     {
         name: "Cepheus",
         codenames: ["cepheus"],
-        image: "img/devices/cepheus.png",
+        image: "img/devices/cepheus.webp",
         roms: [],
         status: "owned",
         aka: ["Xiaomi Mi 9"]
@@ -270,7 +270,7 @@ const devices = [
     {
         name: "Gauguin",
         codenames: ["gauguin"],
-        image: "img/devices/gauguin.png",
+        image: "img/devices/gauguin.webp",
         roms: [],
         status: "owned",
         aka: ["Xiaomi Mi 10T Lite", "Xiaomi Mi 10i 5G", "Redmi Note 9 Pro 5G"]
@@ -278,7 +278,7 @@ const devices = [
     {
         name: "r8q",
         codenames: ["r8q"],
-        image: "img/devices/r8q.png",
+        image: "img/devices/r8q.webp",
         roms: [],
         status: "owned",
         aka: ["Samsung Galaxy S20 FE (Snapdragon)"]
@@ -286,7 +286,7 @@ const devices = [
     {
         name: "Platina",
         codenames: ["platina"],
-        image: "img/devices/platina.png",
+        image: "img/devices/platina.webp",
         roms: [],
         status: "owned",
         aka: ["Xiaomi Mi 8 Lite"]
@@ -294,7 +294,7 @@ const devices = [
     {
         name: "Lavender",
         codenames: ["lavender"],
-        image: "img/devices/lavender.png",
+        image: "img/devices/lavender.webp",
         roms: [],
         status: "owned",
         aka: ["Redmi Note 7"]
@@ -302,7 +302,7 @@ const devices = [
     {
         name: "Twolip",
         codenames: ["twolip"],
-        image: "img/devices/twolip.png",
+        image: "img/devices/twolip.webp",
         roms: [],
         status: "owned",
         aka: ["Redmi Note 6 Pro"]
@@ -310,7 +310,7 @@ const devices = [
     {
         name: "Nitrogen",
         codenames: ["nitrogen"],
-        image: "img/devices/nitrogen.png",
+        image: "img/devices/nitrogen.webp",
         roms: [],
         status: "owned",
         aka: ["Xiaomi Mi Max 3"]
@@ -318,7 +318,7 @@ const devices = [
     {
         name: "Jason",
         codenames: ["jason"],
-        image: "img/devices/jason.png",
+        image: "img/devices/jason.webp",
         roms: [],
         status: "owned",
         aka: ["Xiaomi Mi Note 3"]
@@ -326,7 +326,7 @@ const devices = [
     {
         name: "Jasmine_Sprout",
         codenames: ["jasmine_sprout"],
-        image: "img/devices/jasmine_sprout.png",
+        image: "img/devices/jasmine_sprout.webp",
         roms: [],
         status: "owned",
         aka: ["Xiaomi Mi A2"]
@@ -334,7 +334,7 @@ const devices = [
     {
         name: "Whyred",
         codenames: ["whyred"],
-        image: "img/devices/whyred.png",
+        image: "img/devices/whyred.webp",
         roms: [],
         status: "owned",
         aka: ["Redmi Note 5"]
@@ -342,7 +342,7 @@ const devices = [
     {
         name: "Clover",
         codenames: ["clover"],
-        image: "img/devices/clover.png",
+        image: "img/devices/clover.webp",
         roms: [],
         status: "owned",
         aka: ["Mi Pad 4"]
@@ -350,7 +350,7 @@ const devices = [
     {
         name: "Aurora",
         codenames: ["aurora"],
-        image: "img/devices/aurora.png",
+        image: "img/devices/aurora.webp",
         roms: [],
         status: "owned",
         aka: ["Xiaomi Mi 14 Ultra"]
@@ -358,7 +358,7 @@ const devices = [
     {
         name: "Once",
         codenames: ["once"],
-        image: "img/devices/once.png",
+        image: "img/devices/once.webp",
         roms: [],
         status: "owned",
         aka: ["Xiaomi Mi Box 3"]
@@ -366,7 +366,7 @@ const devices = [
     {
         name: "Sm-A600",
         codenames: ["sm-a600"],
-        image: "img/devices/sm-a600.png",
+        image: "img/devices/sm-a600.webp",
         roms: [],
         status: "owned",
         aka: ["Samsung Galaxy A6"]
@@ -374,7 +374,7 @@ const devices = [
     {
         name: "Xcover4lte",
         codenames: ["xcover4lte"],
-        image: "img/devices/xcover4lte.png",
+        image: "img/devices/xcover4lte.webp",
         roms: [],
         status: "owned",
         aka: ["Samsung Galaxy Xcover 4"]
@@ -382,7 +382,7 @@ const devices = [
     {
         name: "jfltexx",
         codenames: ["jfltexx"],
-        image: "img/devices/jfltexx.png",
+        image: "img/devices/jfltexx.webp",
         roms: [],
         status: "owned",
         aka: ["Samsung Galaxy S4"]
