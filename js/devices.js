@@ -22,6 +22,7 @@ const devices = [
     {
         name: "Hotdogb",
         codenames: ["hotdogb"],
+        builds: ["evolution-x"],
         image: "img/devices/hotdogb.webp",
         roms: ["lineageos", "evolutionx"],
         status: "active",
@@ -30,6 +31,7 @@ const devices = [
     {
         name: "Veux",
         codenames: ["veux", "peux"],
+        builds: ["lineageos", "evolution-x"],
         image: "img/devices/veux.webp",
         roms: ["evolutionx"],
         status: "active",
@@ -38,6 +40,7 @@ const devices = [
     {
         name: "Laurel_Sprout",
         codenames: ["laurel_sprout"],
+        builds: ["lineageos"],
         image: "img/devices/laurel_sprout.webp",
         roms: ["evolutionx"],
         status: "active",
@@ -54,6 +57,7 @@ const devices = [
     {
         name: "Ginkgo",
         codenames: ["ginkgo"],
+        builds: ["lineageos"],
         image: "img/devices/ginkgo.webp",
         roms: ["evolutionx"],
         status: "active",
@@ -102,6 +106,7 @@ const devices = [
     {
         name: "Ibiza",
         codenames: ["ibiza"],
+        builds: ["lineageos"],
         image: "img/devices/ibiza.webp",
         roms: ["lineageos"],
         status: "active",
@@ -118,6 +123,7 @@ const devices = [
     {
         name: "Odin2",
         codenames: ["odin2"],
+        builds: ["lineageos"],
         image: "img/devices/odin2.webp",
         roms: ["lineageos"],
         status: "testing",
@@ -126,6 +132,7 @@ const devices = [
     {
         name: "Odin2Mini",
         codenames: ["odin2mini"],
+        builds: ["lineageos"],
         image: "img/devices/odin2mini.webp",
         roms: ["lineageos"],
         status: "testing",
@@ -166,6 +173,7 @@ const devices = [
     {
         name: "Sargo",
         codenames: ["sargo"],
+        builds: ["lineageos"],
         image: "img/devices/sargo.webp",
         roms: ["evolutionx"],
         status: "eol",
@@ -286,6 +294,7 @@ const devices = [
     {
         name: "Platina",
         codenames: ["platina"],
+        builds: ["lineageos"],
         image: "img/devices/platina.webp",
         roms: [],
         status: "owned",
@@ -294,6 +303,7 @@ const devices = [
     {
         name: "Lavender",
         codenames: ["lavender"],
+        builds: ["lineageos"],
         image: "img/devices/lavender.webp",
         roms: [],
         status: "owned",
@@ -302,6 +312,7 @@ const devices = [
     {
         name: "Twolip",
         codenames: ["twolip"],
+        builds: ["lineageos"],
         image: "img/devices/twolip.webp",
         roms: [],
         status: "owned",
@@ -326,6 +337,7 @@ const devices = [
     {
         name: "Jasmine_Sprout",
         codenames: ["jasmine_sprout"],
+        builds: ["lineageos"],
         image: "img/devices/jasmine_sprout.webp",
         roms: [],
         status: "owned",
@@ -334,6 +346,7 @@ const devices = [
     {
         name: "Whyred",
         codenames: ["whyred"],
+        builds: ["lineageos"],
         image: "img/devices/whyred.webp",
         roms: [],
         status: "owned",
@@ -350,6 +363,7 @@ const devices = [
     {
         name: "Aurora",
         codenames: ["aurora"],
+        builds: ["lineageos"],
         image: "img/devices/aurora.webp",
         roms: [],
         status: "owned",
@@ -404,6 +418,11 @@ const statusConfig = {
 // ROM CONFIG
 // ============================================
 
+const buildsConfig = {
+    lineageos:     "LineageOS",
+    "evolution-x": "EvolutionX"
+};
+
 const romConfig = {
     lineageos:  { label: "LineageOS",  class: "los"  },
     evolutionx: { label: "EvolutionX", class: "evox" }
@@ -426,6 +445,11 @@ function buildCard(device) {
         return rom ? `<span class="rom-badge ${r}">${rom.label}</span>` : "";
     })
     .join("");
+
+    const buildsHtml = device.builds?.length ? `
+        <div class="device-builds">
+            ${device.builds.map(r => `<a href="https://downloads.onelots.org/roms/${r}/${device.codenames[0]}/" target="_blank" rel="noopener">${buildsConfig[r]} builds ↗</a>`).join("")}
+        </div>` : "";
 
     const imgHtml = device.image
         ? `<img src="${device.image}" alt="${device.name}" loading="lazy">`
@@ -459,6 +483,7 @@ function buildCard(device) {
                 </div>
                 <div class="device-codenames">${codenamesHtml}</div>
                 <div class="device-roms">${romsHtml}</div>
+                ${buildsHtml}
                 ${akaHtml}
             </div>
         </div>`;

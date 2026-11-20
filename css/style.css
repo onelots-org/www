@@ -1525,6 +1525,23 @@ footer a:hover {
     flex-shrink: 0;
 }
 
+.device-builds {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.device-builds a {
+    font-size: 0.72rem;
+    font-family: var(--font-mono);
+    color: var(--accent-light);
+    text-decoration: none;
+}
+
+.device-builds a:hover {
+    text-decoration: underline;
+}
+
 .device-aka {
     border-top: 1px solid var(--border);
     padding-top: 10px;
