@@ -972,25 +972,8 @@ nav ul a.active {
     transform: translate(3px, -3px);
 }
 
-.service-status {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    color: var(--green);
-    background: var(--green-glow);
-    border: 1px solid #3ddc8433;
-    padding: 3px 10px;
-    border-radius: 100px;
-}
-
-.service-status .dot {
-    width: 6px;
-    height: 6px;
-    background: var(--green);
-    border-radius: 50%;
-    animation: pulse 2s infinite;
+.service-badge {
+    margin-left: auto;
 }
 
 /* ============================================
