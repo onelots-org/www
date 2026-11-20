@@ -38,7 +38,7 @@
                     <li><a href="https://github.com/onelots" target="_blank" class="nav-cta">GitHub</a></li>
                 </ul>
             </nav>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">
                 <svg class="feather" width="24" height="24" aria-hidden="true"><use href="#i-menu"/></svg>
             </button>
         </div>
@@ -91,9 +91,16 @@
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileNav = document.getElementById('mobileNav');
         const mobileClose = document.getElementById('mobileClose');
-        mobileMenuBtn.addEventListener('click', () => { mobileNav.classList.add('active'); document.body.style.overflow = 'hidden'; });
-        mobileClose.addEventListener('click', () => { mobileNav.classList.remove('active'); document.body.style.overflow = ''; });
-        document.querySelectorAll('.mobile-nav a').forEach(l => l.addEventListener('click', () => { mobileNav.classList.remove('active'); document.body.style.overflow = ''; }));
+        const setMenu = open => {
+            mobileNav.classList.toggle('active', open);
+            mobileMenuBtn.setAttribute('aria-expanded', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+            (open ? mobileClose : mobileMenuBtn).focus();
+        };
+        mobileMenuBtn.addEventListener('click', () => setMenu(true));
+        mobileClose.addEventListener('click', () => setMenu(false));
+        document.querySelectorAll('.mobile-nav a').forEach(l => l.addEventListener('click', () => setMenu(false)));
+        document.addEventListener('keydown', e => { if (e.key === 'Escape' && mobileNav.classList.contains('active')) setMenu(false); });
     </script>
 </body>
 </html>
